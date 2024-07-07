@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import SvgTypeScript from '../public/SvgTypeScript';
+import SvgTypeScript from '../icons/SvgTypeScript';
 import { Navbar } from './Navbar';
 
 export default function DashboardHome() {

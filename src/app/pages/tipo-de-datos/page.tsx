@@ -26,7 +26,7 @@ export default function TipoDeDatosDashboard() {
                                 <li>
                                     <strong className="text-blue-600">string:</strong> Representa secuencias de caracteres.
                                     <div className="text-white bg-gray-900 p-2 mt-1 rounded-md">
-                                    <code>let nombre: string = "Juan";</code>
+                                    <code>let nombre: string = `Juan`;</code>
                                     </div>
                                 </li>
                                 <li>
@@ -39,13 +39,13 @@ export default function TipoDeDatosDashboard() {
                                     <strong className="text-blue-600">array:</strong> Representa una colección de valores del mismo tipo.
                                     <div className="text-white bg-gray-900 p-2 mt-1 rounded-md">
                                     <code>let numeros: number[] = [1, 2, 3];</code><br />
-                                    <code>let nombres: Array&lt;string&gt; = ["Juan", "Ana", "Luis"];</code>
+                                    <code>let nombres: Array&lt;string&gt; = [`Juan`, `Ana`, `Luis`];</code>
                                     </div>
                                 </li>
                                 <li>
                                     <strong className="text-blue-600">tuple:</strong> Representa un array con un número fijo de elementos, donde cada elemento puede tener un tipo distinto.
                                     <div className="text-white bg-gray-900 p-2 mt-1 rounded-md">
-                                    <code>let persona: [string, number] = ["Juan", 25];</code>
+                                    <code>let persona: [string, number] = [`Juan`, 25];</code>
                                     </div>
                                 </li>
                                 <li>
@@ -64,13 +64,13 @@ export default function TipoDeDatosDashboard() {
                                 <li>
                                     <strong className="text-blue-600">any:</strong> Representa cualquier tipo de valor y se utiliza cuando el tipo de una variable no se conoce de antemano.
                                     <div className="text-white bg-gray-900 p-2 mt-1 rounded-md">
-                                    <code>let valor: any = "Hola";<br />valor = 25;</code>
+                                    <code>let valor: any = `Hola`;<br />valor = 25;</code>
                                     </div>
                                 </li>
                                 <li>
                                     <strong className="text-blue-600">void:</strong> Representa la ausencia de un valor, generalmente usado como el tipo de retorno de funciones que no devuelven un valor.
                                     <div className="text-white bg-gray-900 p-2 mt-1 rounded-md">
-                                    <code>function saludar(): void {'{'}<br />&nbsp;&nbsp;console.log("Hola");<br />{'}'}</code>
+                                    <code>function saludar(): void {'{'}<br />&nbsp;&nbsp;console.log(`Hola`);<br />{'}'}</code>
                                     </div>
                                 </li>
                                 <li>
@@ -82,7 +82,7 @@ export default function TipoDeDatosDashboard() {
                                 <li>
                                     <strong className="text-blue-600">object:</strong> Representa un valor no primitivo, es decir, cualquier cosa que no sea <code>number</code>, <code>string</code>, <code>boolean</code>, <code>symbol</code>, <code>null</code> o <code>undefined</code>.
                                     <div className="text-white bg-gray-900 p-2 mt-1 rounded-md">
-                                    <code>let persona: {'{'} nombre: string; edad: number {'}'} = {'{'} nombre: "Juan", edad: 25 {'}'};</code>
+                                    <code>let persona: {'{'} nombre: string; edad: number {'}'} = {'{'} nombre: `Juan`, edad: 25 {'}'};</code>
                                     </div>
                                 </li>
                             </ul>

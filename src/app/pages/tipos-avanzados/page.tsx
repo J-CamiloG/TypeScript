@@ -106,8 +106,14 @@ export default function TipoDeDatosAvanzadosDashboard() {
                                 &nbsp;&nbsp;trabajo: string;<br />
                                 {'}'}<br />
                                 let empleado: Persona &amp; Trabajador = {'{'}<br />
-                                &nbsp;&nbsp;nombre: `Juan`,<br />
-                                &nbsp;&nbsp;trabajo: `Ingeniero`<br />
+                                {`
+                                nombre: "Juan",
+                                `}
+                                <br />
+                                {`
+                                "Ingeniero"
+                                `}
+                                <br />
                                 {'}'};
                             </code>
                         </div>
@@ -133,7 +139,10 @@ export default function TipoDeDatosAvanzadosDashboard() {
                                 &nbsp;&nbsp;edad: number;<br />
                                 {'}'}<br />
                                 let usuario: Usuario = {'{'}<br />
-                                &nbsp;&nbsp;nombre: `Juan`,<br />
+                                {`
+                                    nombre: "Juan",
+                                `}
+                                <br />
                                 &nbsp;&nbsp;edad: 25<br />
                                 {'}'};
                             </code>
@@ -142,17 +151,27 @@ export default function TipoDeDatosAvanzadosDashboard() {
                     <li>
                         <strong className="text-blue-600">Generics:</strong> Permiten crear componentes que trabajen con una variedad de tipos en lugar de un único tipo.
                         <div className="text-white bg-gray-900 p-2 mt-1 rounded-md">
-                            <pre className="bg-gray-900 rounded-md p-4 overflow-x-auto">
                                 <code className="text-white">
-                                {`
-                                    function identidad<T>(valor: T): T {
+                                    {`
+                                        function identidad<T>(valor: T): T {
+                                    `}
+                                    <br />
+                                    {`
                                     return valor;
+                                    `}
+                                    <br />
+                                    {`
                                     }
+                                    `}
+                                    <br />
+                                    {`
                                     let numero = identidad<number>(10);
+                                    `}
+                                    <br />
+                                    {`
                                     let texto = identidad<string>("Hola");
-                                `}
+                                    `}
                                 </code>
-                            </pre>
                         </div>
                     </li>
                 </ul>
